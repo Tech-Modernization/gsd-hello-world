@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tech-mod-backstage
+  description: A Reference Application for Trust and Verify
+  tags:
+    - golang
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: tech-mod-backstage-db
+  description: Stores software catalog inforamtion
+spec:
+  type: database
+  owner: group:default/software-delivery
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: tech-mod-github
+  description: The Tech-Modernization Github Org
+spec:
+  type: scm
+  owner: group:default/tech-mod-admins
