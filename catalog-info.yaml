@@ -4,5 +4,11 @@ metadata:
   name: gsd-hello-world
   description: A Reference Application for Trust and Verify
   tags:
-    - golang
+    - golang    
+spec:
+  type: code
+  owner: group:default/software-delivery
+  lifecycle: production
+  dependsOn:
+    - resource:default/gsd-verification-rules    
 ---
