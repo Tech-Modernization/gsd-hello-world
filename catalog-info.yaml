@@ -10,5 +10,5 @@ spec:
   owner: group:default/software-delivery
   lifecycle: production
   dependsOn:
-    - resource:default/gsd-verification-rules    
+    - component:default/gsd-verification-rules    
 ---
